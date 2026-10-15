@@ -9,10 +9,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: |
-          BASE="" SITE_URL="https://aljazeerahpestcontrol.com" python build.py
-          printf 'aljazeerahpestcontrol.com\n' > CNAME
+          mkdir -p _site
+          cd _site
+          BASE="" SITE_URL="https://aljazeerahpestcontrol.com" python ../build.py
       - uses: actions/upload-pages-artifact@v3
-        with: {path: .}
+        with: {path: _site}
   deploy:
     needs: build
     runs-on: ubuntu-latest

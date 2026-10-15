@@ -12,10 +12,10 @@ The workflow in `.github/workflows/pages.yml` builds the site and deploys it to 
 
 1. In the GitHub repository, open **Settings > Pages** and set **Build and deployment > Source** to **GitHub Actions**.
 2. Add `aljazeerahpestcontrol.com` as the custom domain in Pages.
-3. At your domain registrar, point the apex domain to GitHub Pages using its current A/AAAA records, and optionally set `www` as a CNAME to `naveedali0188.github.io`. DNS changes can take time to propagate.
+3. At your domain registrar, create A records for the apex (`@`) pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Optionally, set `www` as a CNAME to `naveedali0188.github.io`. DNS changes can take up to 24 hours to propagate.
 4. Once GitHub verifies the domain and the DNS records have propagated, enable **Enforce HTTPS** in Pages.
 
-The workflow publishes a `CNAME` file and builds root-relative links for the custom domain. DNS changes must be made at the domain registrar by someone with access to the domain.
+The workflow builds root-relative links for the custom domain and publishes only the generated site. DNS changes must be made at the domain registrar by someone with access to the domain.
 ## Search Console
 Add the property, verify ownership, submit `/sitemap.xml`, inspect the `/en/` URL. No ranking or AI-search visibility is guaranteed.
 ## Needs your input
