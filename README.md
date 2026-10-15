@@ -11,15 +11,16 @@ Run `python build.py` for local preview. Edit content in `build.py` (strings `T`
 The workflow in `.github/workflows/pages.yml` builds the site and deploys it to `https://aljazeerahpestcontrol.com` whenever changes are pushed to `main`.
 
 1. In the GitHub repository, open **Settings > Pages** and set **Build and deployment > Source** to **GitHub Actions**.
-2. Add `aljazeerahpestcontrol.com` as the custom domain in Pages.
+2. In **Custom domain**, enter exactly `aljazeerahpestcontrol.com` (hostname only: no `https://`, `www.`, path, or trailing slash), then save.
 3. At your domain registrar, create A records for the apex (`@`) pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Optionally, set `www` as a CNAME to `naveedali0188.github.io`. DNS changes can take up to 24 hours to propagate.
 4. Once GitHub verifies the domain and the DNS records have propagated, enable **Enforce HTTPS** in Pages.
 
-The workflow builds root-relative links for the custom domain and publishes only the generated site. DNS changes must be made at the domain registrar by someone with access to the domain.
+The workflow builds root-relative links for the custom domain and publishes only the generated site. To use the GitHub project URL before configuring the custom domain, add the repository variable `PAGES_BASE_PATH` with the value `/aljazeerahpestcontrol.com`; the workflow will then build links for `https://naveedali0188.github.io/aljazeerahpestcontrol.com/`. Leave that variable unset when the custom domain is configured. DNS changes must be made at the domain registrar by someone with access to the domain.
 ## Search Console
 Add the property, verify ownership, submit `/sitemap.xml`, inspect the `/en/` URL. No ranking or AI-search visibility is guaranteed.
-## Needs your input
-- Replace `assets/img/icon.svg` with the real logo (`https://aljazeerahpestcontrol.ae/wp-content/uploads/2025/04/Al-Jazeerah-Logo.png`) after confirming rights.
-- Approval logos, photos, testimonials and statistics are deliberately omitted until authorised/verified.
+## Assets and content notes
+- `assets/img/logo.webp` and `assets/img/favicon.webp` are local copies of the company logo and favicon served by the official reference site, `https://aljazeerahpestcontrol.ae/`.
+- The photo rights could not be independently verified, so the image showcase uses original local SVG illustrations instead of copied or hotlinked photography. Replace them only with company-authorized images.
+- Approval logos, testimonials, statistics, certifications and treatment guarantees are deliberately omitted unless authorised and verified.
 - Forms open a pre-filled WhatsApp message (static hosting has no server). The FAQ assistant is keyword-based, not an LLM; a real LLM needs a separate backend holding the API key.
 - Service pages share one translated template; add unique per-service copy and review translations with native speakers.

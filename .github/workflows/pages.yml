@@ -4,6 +4,8 @@ permissions: {contents: read, pages: write, id-token: write}
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -11,7 +13,16 @@ jobs:
       - run: |
           mkdir -p _site
           cd _site
-          BASE="" SITE_URL="https://aljazeerahpestcontrol.com" python ../build.py
+          if [ -n "$PAGES_BASE_PATH" ]; then
+            BASE="${PAGES_BASE_PATH%/}"
+            SITE_URL="https://naveedali0188.github.io${BASE}"
+          else
+            BASE=""
+            SITE_URL="https://aljazeerahpestcontrol.com"
+          fi
+          export BASE SITE_URL
+          python ../build.py
+          cp -R ../assets ../css ../js .
       - uses: actions/upload-pages-artifact@v3
         with: {path: _site}
   deploy:
