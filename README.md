@@ -46,7 +46,18 @@ and keep the existing validation.
 
 ## Deployment — GitHub Pages
 
-1. Create an empty repository on GitHub (e.g. `aljazeerah-website`).
+This repository deploys to **https://aljazeerahpestcontrol.com/** through the included
+workflow (`.github/workflows/deploy.yml`), with the custom domain kept in `CNAME`.
+Every push to `main` publishes automatically.
+
+The previous multilingual generated site is preserved on the
+`backup/legacy-multilingual-site` branch. Old `/en/` and `/ar/` links redirect to the new
+page; `/zh/` and `/ru/` pages are intentionally gone because the site now supports exactly
+English and Arabic.
+
+To deploy from scratch:
+
+1. Create an empty repository on GitHub.
 2. Push this folder:
 
    ```bash
@@ -59,7 +70,8 @@ and keep the existing validation.
 
 3. In the repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 4. The included workflow publishes on every push to `main`. The URL appears in the Actions run
-   summary and under Settings → Pages.
+   summary and under Settings → Pages. If you use a custom domain, keep the `CNAME` file and set
+   the domain under Settings → Pages.
 
 If you prefer not to use Actions, delete `.github/workflows/deploy.yml` and choose
 **Deploy from a branch → main → / (root)** instead.
@@ -73,6 +85,12 @@ If you prefer not to use Actions, delete `.github/workflows/deploy.yml` and choo
 - Only the existing social profiles (Facebook, Instagram, LinkedIn) and the supplied Google Maps
   link are used.
 - The testimonial shown is the one published on the existing site.
+
+## Live
+
+- Homepage (English): <https://aljazeerahpestcontrol.com/>
+- Arabic: <https://aljazeerahpestcontrol.com/?lang=ar>
+- 404: <https://aljazeerahpestcontrol.com/404.html>
 
 ## Verified
 
