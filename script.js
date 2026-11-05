@@ -611,12 +611,18 @@
       window.location.href = mailto;
     });
 
-    /* The note is itself translated, so keep the neutral text in sync. */
+    /* Re-render messages that were produced before the language changed:
+       the status note and any visible field errors. */
     Array.prototype.forEach.call(langButtons, function (btn) {
       btn.addEventListener('click', function () {
-        if (!status) return;
-        status.classList.remove('is-success', 'is-error');
-        statusDefault = status.innerHTML;
+        if (status) {
+          status.classList.remove('is-success', 'is-error');
+          statusDefault = status.innerHTML;
+        }
+        fields.forEach(function (field) {
+          var input = document.getElementById(field.id);
+          if (input && input.getAttribute('aria-invalid') === 'true') validateField(field);
+        });
       });
     });
   }
