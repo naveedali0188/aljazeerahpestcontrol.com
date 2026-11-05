@@ -86,6 +86,23 @@ If you prefer not to use Actions, delete `.github/workflows/deploy.yml` and choo
   link are used.
 - The testimonial shown is the one published on the existing site.
 
+## Google Search Console
+
+The ownership token is embedded in the `<head>` of every page:
+
+```html
+<meta name="google-site-verification" content="qtb95nkPCCdqGn4rqYu_mI-oNFLEoWkOwzgi633OLoM" />
+```
+
+In Search Console create a **URL-prefix** property for `https://aljazeerahpestcontrol.com/`
+(the HTML-tag method does not work for a **Domain** property, which needs the TXT record at the
+registrar), then press **Verify**. After that, submit
+`https://aljazeerahpestcontrol.com/sitemap.xml` under **Sitemaps** and use **URL inspection →
+Request indexing** for the homepage.
+
+The TXT record — `google-site-verification=qtb95nkPCCdqGn4rqYu_mI-oNFLEoWkOwzgi633OLoM` — is the
+alternative for a Domain property; it has to be added at the DNS provider, not in this repository.
+
 ## Live
 
 - Homepage (English): <https://aljazeerahpestcontrol.com/>
