@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aljazeerahpestcontrol.ae/sitemap.xml
+Sitemap: https://aljazeerahpestcontrol.com/sitemap.xml

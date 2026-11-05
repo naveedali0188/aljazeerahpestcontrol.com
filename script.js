@@ -12,9 +12,9 @@
   docEl.classList.add('js');
 
   var LANG_KEY = 'aj-lang';
-  var PHONE = '055 720 7420';
-  var PHONE_HREF = 'tel:+971557207420';
-  var WA_HREF = 'https://wa.me/971557207420';
+  var PHONE = '055 840 8005';
+  var PHONE_HREF = 'tel:+971558408005';
+  var WA_HREF = 'https://wa.me/971558408005';
   var MAIL = 'Info@aljazeerahpestcontrol.ae';
 
   /* ---------------------------------------------------------------- Arabic */
@@ -176,7 +176,7 @@
     'faq.q6': 'ما المناطق التي تخدمونها؟',
     'faq.a6': 'نخدم دبي والشارقة وعجمان، ولدينا مكاتب في دبي والشارقة.',
     'faq.q7': 'هل تقدمون عرض سعر مجاني؟',
-    'faq.a7': 'نعم. اتصل على <a href="tel:+971557207420" dir="ltr">055 720 7420</a>، أو أرسل لنا رسالة واتساب، أو استخدم نموذج عرض السعر في هذه الصفحة. لا يوجد أي مقابل لعرض السعر.',
+    'faq.a7': 'نعم. اتصل على <a href="tel:+971558408005" dir="ltr">055 840 8005</a>، أو أرسل لنا رسالة واتساب، أو استخدم نموذج عرض السعر في هذه الصفحة. لا يوجد أي مقابل لعرض السعر.',
 
     'cta.kicker': 'احمِ نفسك',
     'cta.title': 'احمِ نفسك من الحشرات، لنبدأ اليوم',
@@ -215,7 +215,7 @@
     'err.email': 'يرجى إدخال بريد إلكتروني صحيح.',
     'err.subject': 'يرجى كتابة موضوع قصير.',
     'err.message': 'يرجى كتابة رسالة قصيرة.',
-    'form.opening': 'يفتح تطبيق البريد الإلكتروني الآن مع بياناتك. إذا لم يفتح، اتصل على 055 720 7420 أو أرسل لنا رسالة واتساب.',
+    'form.opening': 'يفتح تطبيق البريد الإلكتروني الآن مع بياناتك. إذا لم يفتح، اتصل على 055 840 8005 أو أرسل لنا رسالة واتساب.',
     'form.invalid': 'يرجى تصحيح الحقول المعلَّمة أدناه.'
   };
 
@@ -243,11 +243,11 @@
   var META = {
     en: {
       title: 'Al Jazeerah Pest Control LLC | Pest Control & Cleaning in Dubai & Sharjah',
-      description: 'Al Jazeerah Pest Control LLC offers professional pest control and cleaning services in Dubai, Sharjah and Ajman for homes and businesses. Free quote: 055 720 7420.'
+      description: 'Al Jazeerah Pest Control LLC offers professional pest control and cleaning services in Dubai, Sharjah and Ajman for homes and businesses. Free quote: 055 840 8005.'
     },
     ar: {
       title: 'شركة الجزيرة لمكافحة الحشرات | مكافحة الحشرات والتنظيف في دبي والشارقة',
-      description: 'تقدم شركة الجزيرة لمكافحة الحشرات خدمات مكافحة الحشرات والتنظيف للمنازل والشركات في دبي والشارقة وعجمان. عرض سعر مجاني: 055 720 7420.'
+      description: 'تقدم شركة الجزيرة لمكافحة الحشرات خدمات مكافحة الحشرات والتنظيف للمنازل والشركات في دبي والشارقة وعجمان. عرض سعر مجاني: 055 840 8005.'
     }
   };
 

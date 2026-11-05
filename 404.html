@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found | Al Jazeerah Pest Control LLC</title>
+  <meta name="description" content="This page does not exist. Go back to the Al Jazeerah Pest Control homepage or call 055 840 8005 for a free quote." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#218C43" />
+  <link rel="icon" href="assets/favicon.webp" type="image/webp" />
+  <link rel="stylesheet" href="assets/fonts.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .notfound {
+      min-height: 70vh;
+      display: grid;
+      place-items: center;
+      padding-block: clamp(48px, 9vw, 96px);
+      background: linear-gradient(180deg, var(--neutral), var(--white));
+    }
+    .notfound__inner { max-width: 680px; text-align: center; }
+    .notfound__code {
+      font-size: clamp(3.4rem, 9vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--green-dark);
+    }
+    .notfound__inner h1 { margin: 12px 0 14px; font-size: clamp(1.5rem, 3.2vw, 2.1rem); color: var(--navy); }
+    .notfound__inner p { margin-inline: auto; max-width: 52ch; }
+    .notfound__actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 26px; }
+    .notfound__ar { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .notfound__ar h2 { font-size: 1.2rem; color: var(--navy); margin-bottom: 8px; }
+    html[lang="ar"] .notfound__en { display: none; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/">
+        <img src="assets/logo.png" alt="Al Jazeerah Pest Control LLC" width="245" height="70" />
+      </a>
+      <nav aria-label="Main menu">
+        <ul class="primary-nav__list" style="display:flex;gap:18px;flex-wrap:wrap">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#pests">Pest Control</a></li>
+          <li><a href="/#cleaning">Cleaning</a></li>
+          <li><a href="/#quote">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="notfound" id="main">
+    <div class="container notfound__inner">
+      <p class="notfound__code">404</p>
+      <h1>We couldn’t find that page</h1>
+      <p>The address may be mistyped, or the page may have moved. Our homepage has everything you need — services, offices and a free quote form.</p>
+      <div class="notfound__actions">
+        <a class="btn btn--primary" href="/">Back to homepage</a>
+        <a class="btn btn--wa" href="https://wa.me/971558408005" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn--ghost" href="tel:+971558408005">Call 055 840 8005</a>
+      </div>
+
+      <div class="notfound__ar" lang="ar" dir="rtl">
+        <h2>لم نعثر على هذه الصفحة</h2>
+        <p>قد يكون العنوان غير صحيح أو تم نقل الصفحة. الصفحة الرئيسية تضم الخدمات والمواقع ونموذج عرض سعر مجاني.</p>
+        <div class="notfound__actions">
+          <a class="btn btn--primary" href="/?lang=ar" lang="ar">العودة إلى الرئيسية</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="padding-block:26px;text-align:center">
+      <p style="margin:0;color:rgba(255,255,255,.78)">© 2026 Al Jazeerah Pest Control LLC · Dubai · Sharjah · Ajman</p>
+    </div>
+  </footer>
+</body>
+</html>
